@@ -1,0 +1,64 @@
+<?php
+	// Inialize session
+	session_start();
+	
+	// Check, if username session is NOT set then this page will jump to login page
+	if (!isset($_SESSION['username']))
+		{
+			header('Location: index.php');
+		}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script>
+function validateForm()
+{
+var x=document.forms["comments"]["name1"].value;
+var y=document.forms["comments"]["room"].value;
+if (x==null || x=="")
+  {
+  alert("Please enter your name");
+  return false;
+  }
+else if (y==null || y=="")
+  {
+  alert("Please enter your room no.");
+  return false;
+  }
+}
+
+</script>
+<head>
+<title>other-issues</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="carp.css" />
+<body>
+<div id="topPanel">
+  <ul>
+     <li><a href="logout.php">Logout</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="http://www.free-css.com/">Clients</a></li>
+    <li><a href="http://www.free-css.com/">Support</a></li>
+    <li><a href="http://www.free-css.com/">About us</a></li>
+    <li class="active">Home</li>
+  </ul></div>
+<div id="topPanel1">
+  
+<a href="http://www.pes.edu/"><img src="images/logo1.png" title="pes.edu" alt="pes.edu" width="114" height="150" border="0" /></a></div>
+<div id="headingPanel">
+<h2 style="text-align:center;font-family:arial;color:#26156E;"><font size="6">PES Institute of Technology,Bangalore South Campus<br><center><h3 style="text-align:center;font-family:arial;color:#26156E;"><font size="4">(Formerly,PES School Of Engineering)</font></h3></center></font></h2></div>
+<div id="comment">
+<left>
+<h3 style="font-family:Comic Sans ms;color:blue">Please post your carpenting issues:</h3>
+<form id="comments" method="post" action="plumb.php" onsubmit="return validateForm()">
+<p><font size="1">Fields marked as (<font style="color:red;">*</font>) are mandatory.</font></p>
+<form id="comments" method="post" action="plumb.php" onsubmit="return validateForm()">
+<label for="name">Name:<font style="color:red;">*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" name="name1" class="placeholder" placeholder="YOUR NAME"><br>
+<label for="room">Room No:<font style="color:red;">*</font>&nbsp;</label><input type="text" name="room" class="placeholder" placeholder="YOUR ROOM NO"><br>
+<h3 align="left">ENTER YOUR COMPLAINT BELOW</h2>
+<textarea rows="5" cols="90" name="plumb"></textarea></left>
+<center><input type="submit" name="Submit" value="SUBMIT" /></center></form></div>
+<div id="testimonial">
+<p class="large" style="font-family:arial;color:#800000;"><span><font size="6">Welcome Hostelites...</font><br><br><font style="color:#800000">Please feel free to post all your other issues which do not lie in the previous three forums.Your complain will be send to the authority and the suitable action will be taken accordingly as per rules and regulations .</font></span></p></div>
+</head>
+</html>

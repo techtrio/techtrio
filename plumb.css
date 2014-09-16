@@ -1,0 +1,26 @@
+/* Main CSS */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	font-family: sans-serif;
+	height:1000px;
+	background-color: #ffffff;
+	background-image: -webkit-linear-gradient(bottom, #ffffff 0%, #ffffff 100%);
+	background-image: -moz-linear-gradient(bottom, #ffffff 0%, #ffffff 100%);
+	background-image: -o-linear-gradient(bottom, #ffffff 0%, #ffffff 100%);
+	background-image: -ms-linear-gradient(bottom, #ffffff 0%, #ffffff 100%);
+	background-image: linear-gradient(bottom, #ffffff 0%, #ffffff 100%);
+}
+#topPanel{width:500px; height:200px; position:absolute; left:0px;top:30px;padding:0;}
+#topPanel ul{display:block; width:732px; height:32px; position:absolute; top:0; right:0; margin:11px 0 0; padding:0 29px 0 0; border-bottom:0px solid #AEAEAE;background-color:#ffffff;}
+#topPanel ul li{float:right; font:12px/36px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:bold;background-color:#ffffff;}
+#topPanel ul li a{width:74px; height:36px; display:block; padding:0; color:#555; background:#fff; text-decoration:none; text-align:center; margin:0 1px 0 0; top:0px; left:0px;background-color:#ffffff;}
+#topPanel ul li a:hover{width:74px; height:36px; text-decoration:none; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff;background-color:#ffffff;}
+#topPanel ul li.active{width:74px; display:block; height:36px; background:url(images/button.gif) no-repeat 0 0 #AEAEAE; color:#fff; text-align:center; margin:0 1px 0 0;background-color:#ffffff;}
+#topPanel1 img{width:114px; height:150px; z-index:1; padding:0; position:absolute; margin:0 0 0 1050px;}
+#headingPanel{width:1200px; height:30px; position:absolute; top:-40px; left:0; margin:110px 0 0; padding:0px; color:#fff;margin-top: 150px;}
+#comment{width:700px; height:500px;display:block; ;position:absolute; padding:0px; margin:110px 0 0;margin-top:300px; color:#786321;}
+#testimonial{width:500px; height:250px; display:block; background:url(images/testimonial-bg.gif) 0 0 no-repeat #FFF6DB;position:absolute; padding:32px 33px 0 148px; margin:margin:0 0 0 1050px;margin-top:250px;left:720px; color:#786321;}
+#testimonial p{background:none; margin:0; padding:0 0 5px 0;}
+#testimonial p span{color:#786321 !Important; background:#FFFAED !Important;}
+
